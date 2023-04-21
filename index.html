@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Just Kiddin'</title>
+    <meta charset="utf-8">
+    <meta description="This is a webpage that I created myself.">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body onload="selectText()">
+  
+<section id="top">
+      <div id="topSide">
+        <h1 id="h1">😅Joke API app😅</h1>
+
+        <p id="Description"></p>
+        <br>
+        <p id="Description2"></p>
+
+        
+        <input type="text" 
+        id="InputFilter" 
+        placeholder="Tell us a topic for a joke..or just press Enter.." 
+        style="Width: 20%; "
+        onclick="EnterEventHandler()">
+  
+        <p></p><!--Added only for the button underneath to be centered-->
+        <button class="button-joke" role="button" id="SearchJoke" 
+        onclick="sendApiGetReq()">Search</button>
+    </div>
+</section>
+
+<section id="mid">
+    <div id="mainSide">
+       
+      
+    </div>
+    
+</section>
+<section id="bot">
+    <div id="bottomSide">
+      
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,144 @@
+#topSide{
+  text-align: center;
+  float:center;
+  min-width: 320px;
+  margin-top: 0.1rem;
+  display: flexbox;
+}
+h1{
+  font-size: 3rem;
+  color:white;
+  text-shadow: 2.4px 1.3px rgba(96, 93, 93, 0.516);
+  text-shadow: 1.5px 4px rgba(96, 93, 93, 0.516);
+}
+p{
+  color:rgb(53, 53, 53);
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+a{
+  font-size: 1.5rem;
+  color:white;
+}
+
+#mainSide{
+  text-align: center;
+
+}
+#bottomSide{
+  text-align: center;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: rgb(80,85,111);
+  background-image: linear-gradient(
+    230deg,
+    hsl(240deg 100% 74%) 0%,
+    hsl(305deg 80% 67%) 10%,
+    hsl(330deg 100% 68%) 20%,
+    hsl(7deg 100% 72%) 30%,
+    hsl(39deg 100% 59%) 40%,
+    hsl(55deg 100% 50%) 50%,
+    hsl(86deg 88% 64%) 60%,
+    hsl(142deg 88% 65%) 70%,
+    hsl(170deg 100% 47%) 80%,
+    hsl(183deg 100% 47%) 90%,
+    hsl(190deg 100% 50%) 100%
+  );  background-attachment: fixed;
+  margin:0;
+  overflow:scroll;
+  align-items: center;
+  text-align: center;
+} 
+
+label{
+  font-size: 1.5rem;
+  color:black;
+}
+button{
+display:block;
+font-size: 1.5rem;
+color:white;
+font-weight: bold;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 5px solid #cccccc;
+  border-radius: 5px;
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+/* CSS */
+.button-joke {
+  background-color: #000000;
+  border-radius: 100px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 -25px 18px -14px inset,rgba(44, 182, 187, 0.15) 0 1px 2px,rgba(44, 130, 187, 0.15) 0 2px 4px,rgba(44, 111, 187, 0.15) 0 4px 8px,rgba(44, 77, 187, 0.15) 0 8px 16px,rgba(44, 187, 175, 0.15) 0 16px 32px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-joke:hover {
+  box-shadow: rgba(180, 172, 172, 0.35) 0 -25px 18px -14px inset,rgba(1, 255, 200, 0.25) 0 1px 2px,rgba(0, 238, 255, 0.25) 0 2px 4px,rgba(44, 187, 187, 0.25) 0 4px 8px,rgba(44, 154, 187, 0.25) 0 8px 16px,rgba(46, 44, 187, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(1deg);
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 250px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}
